@@ -15,6 +15,33 @@ public class OrderdApp {
         arr = new OrdArray(maxSize);
 
         arr.insert(17);
+        arr.insert(99);
+        arr.insert(12);
+        arr.insert(11);
+        arr.insert(27);
+        arr.insert(29);
+        arr.insert(22);
+        arr.insert(21);
+        arr.insert(37);
+        arr.insert(39);
+        arr.insert(32);
+        arr.insert(31);
+        arr.display();
+
+        int searchKey = 32;
+
+        if (arr.find(searchKey) != arr.size())
+            System.out.println("Found " + searchKey);  
+        else
+            System.out.println("Can't find " + searchKey);
+
+        arr.delete(searchKey);
+
+        if (arr.find(searchKey) != arr.size())
+            System.out.println("Found " + searchKey);  
+        else
+            System.out.println("Can't find " + searchKey);
+
         arr.display();
 
     }
